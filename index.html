@@ -16,20 +16,24 @@
         <nav class="navbar" id="navbar">
           <ul class="navbar-menu">
             <li class="nav-item">
-              <a href="#home" class="nav-link active">Home</a>
+              <a href="#home" class="nav-link active-link">Home</a>
+              <div class="circle"></div>
             </li>
             <li class="nav-item">
-              <a href="#about" class="nav-link active">About</a>
+              <a href="#about" class="nav-link">About</a>
+              <div class="circle"></div>
             </li>
             <li class="nav-item">
-              <a href="#projects" class="nav-link active">Projects</a>
+              <a href="#projects" class="nav-link">Projects</a>
+              <div class="circle"></div>
             </li>
             <li class="nav-item">
-              <a href="#contact" class="nav-link active">Contact</a>
+              <a href="#contact" class="nav-link">Contact</a>
+              <div class="circle"></div>
             </li>
           </ul>
         </nav>
-        <div class="navbar-toggle">
+        <div class="navbar-toggle" onclick="toggleFunc()">
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="bar"></div>
@@ -37,8 +41,8 @@
       </header>
 
       <main class="main-wrapper">
-        <!-- hero section -->
-        <section class="hero-section">
+        <!-- Hero section starts -->
+        <section class="hero-section" id="home">
           <div class="hero-box">
             <div class="left">
               <img src="./assets/images/hero-image.webp" alt="" />
@@ -65,7 +69,187 @@
             </div>
           </div>
         </section>
-        <!-- hero section ends -->
+        <!-- Hero section ends -->
+
+        <!-- About section -->
+        <section class="about-section" id="about">
+          <div class="about">
+            <h1>About Me</h1>
+            <div class="row">
+              <div class="col">
+                <div class="about-info">
+                  <figure class="about-me">
+                    <figcaption>
+                      <img
+                        src="./assets/images/hero-image.webp"
+                        alt="profile"
+                        class="profile"
+                      />
+                      <h3>Web Developer</h3>
+                      <p class="about-description">
+                        My name is Jane Doe i am a web developer with 3+ years
+                        of experience
+                      </p>
+                    </figcaption>
+                  </figure>
+                  <button class="about-me-btn">Hire Me</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <h1>Skill</h1>
+            <div class="skill-box">
+              <div class="skill-info">
+                <span class="title">HTML</span>
+                <div class="skill-progressive-bar">
+                  <span class="skill-progress-percent html">
+                    <span class="tooltip">90%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="skill-info">
+                <span class="title">CSS</span>
+                <div class="skill-progressive-bar">
+                  <span class="skill-progress-percent css">
+                    <span class="tooltip">70%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="skill-info">
+                <span class="title">JAVASCRIPT</span>
+                <div class="skill-progressive-bar">
+                  <span class="skill-progress-percent javascript">
+                    <span class="tooltip">65%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="skill-info">
+                <span class="title">PHP</span>
+                <div class="skill-progressive-bar">
+                  <span class="skill-progress-percent php">
+                    <span class="tooltip">85%</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- About section ends -->
+        <!-- Projects Sections -->
+        <section class="projects-section" id="projects">
+          <h1>Projects</h1>
+          <div class="project-container">
+            <div class="project-box">
+              <div class="project-icon-box">
+                <img
+                  src="./assets/icons/completed.png"
+                  alt="completed"
+                  class="project-icon"
+                />
+              </div>
+              <h4>Completed</h4>
+              <p class="project-description">12+ Finished Projects</p>
+            </div>
+            <div class="project-box">
+              <div class="project-icon-box">
+                <img
+                  src="./assets/icons/people.png"
+                  alt="clients"
+                  class="project-icon"
+                />
+              </div>
+              <h4>Clients</h4>
+              <p class="project-description">8+ Happy clients</p>
+            </div>
+            <div class="project-box">
+              <div class="project-icon-box">
+                <img
+                  src="./assets/icons/experience.png"
+                  alt="experience"
+                  class="project-icon"
+                />
+              </div>
+              <h4>Experience</h4>
+              <p class="project-description">2+ years in web development</p>
+            </div>
+          </div>
+        </section>
+        <!-- Projects Section ends -->
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+          <h4>Let's work together</h4>
+          <p>Do you have a project in your mind, contact here me below</p>
+          <div class="contact-container">
+            <div class="contact-details">
+              <div class="contact-me">
+                <p>Get in touch</p>
+                <img
+                  src="./assets/icons/arrow-down.png"
+                  alt="arrow down"
+                  class="arrow-down-icon"
+                />
+              </div>
+              <div class="contact-row">
+                <img
+                  src="./assets/icons/email.png"
+                  alt="email"
+                  class="contact-icon"
+                />
+              </div>
+              <div class="contact-row">
+                <img
+                  src="./assets/icons/phone.png"
+                  alt="phone"
+                  class="contact-icon"
+                />
+              </div>
+            </div>
+            <div class="contact-form">
+              <form action="">
+                <div class="input-box">
+                  <input
+                    type="text"
+                    class="input-filed"
+                    title="Name"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="input-box">
+                  <input
+                    type="text"
+                    class="input-filed"
+                    title="Name"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="input-box">
+                  <input
+                    type="text"
+                    class="input-filed"
+                    title="Name"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="input-box">
+                  <textarea
+                    name=""
+                    id=""
+                    title="Name"
+                    placeholder="Enter your name"
+                  ></textarea>
+                </div>
+                <button type="button" class="form-btn">Submit</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!-- Contact section ends -->
+        <!-- Footer section -->
+        <footer class="footer">
+          <p>©Copyright Dev Saul Boot camp 2024. All rights reserved</p>
+        </footer>
+        <!-- Footer ends -->
       </main>
     </div>
   </body>
