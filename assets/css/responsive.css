@@ -1,0 +1,103 @@
+:root {
+  --primary-color: #ffffff;
+  --dark-color: #343a40;
+  --secondary-color: #6366f1;
+  --light-color: #f8f8f8;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 968px) {
+  .header {
+    width         : 100%;
+    justify-content: space-around;
+    padding: 1rem 0;
+  }
+  .navbar {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .header-title{
+    text-align: center;
+   
+  }
+
+  .hero-section {
+    height: 100vh;
+    padding: 0 30px;
+  }
+
+  .left img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .right {
+    align-items: center;
+  }
+
+  .right h4 {
+    text-align: center;
+  }
+
+  .right .title,
+  .right .desc {
+    text-align: center;
+  }
+
+  .about-section {
+    height: 100vh;
+    padding: 30px 20px;
+    margin: 130px 0;
+  }
+
+  .about-info {
+    width: 100%;
+    padding-block: 0;
+    padding: 0;
+  }
+
+  .about-info figcaption {
+    padding: 0;
+    text-align: center;
+  }
+
+  .about-me .profile {
+    left: 45%;
+    bottom: 100px;
+  }
+
+  .skill .skill-box {
+    width: 25rem;
+  }
+
+  .projects-section {
+    height: 100vh;
+    align-items: center;
+    padding: 30px 20px;
+    margin: 200px 0;
+  }
+
+  .project-box {
+    width: 100%;
+  }
+
+  .contact-section {
+    height: 100vh;
+    padding: 30px 20px;
+    margin: 120px 0;
+  }
+
+  .contact-details {
+    height: 200px;
+  }
+
+  .footer{
+    width: 100%;
+    margin-top: 100px;
+   
+  }
+}

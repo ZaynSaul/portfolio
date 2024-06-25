@@ -4,6 +4,7 @@
   --secondary-color: #6366f1;
   --light-color: #f8f8f8;
   --shadow-color: rgba(0, 0, 0, 0.1);
+  --gray-color: #e5e7eb;
 }
 
 * {
@@ -143,12 +144,15 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 100px;
 }
 
 .hero-box {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
+  flex-flow: wrap;
   gap: 30px;
 }
 
@@ -235,14 +239,17 @@ a {
 .about-section {
   height: 80vh;
   width: 100%;
+  min-height: 700px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-flow: wrap;
   gap: 20px;
   padding: 0 200px;
   gap: 60px;
 }
+
 .about h1 {
   font-size: 20px;
   font-weight: 800;
@@ -254,23 +261,25 @@ a {
 }
 .about-info {
   flex: 1;
+  flex-basis: 300px;
+  height: 250px;
   background-color: var(--primary-color);
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
+  gap: 10px;
   padding-block: 50px 50px;
   border: 1px solid var(--light-color);
-  padding-inline: 2rem;
   box-shadow: 1px 2px 4px 1px var(--shadow-color);
   border-radius: 20px;
+  padding: 20px;
 }
 
 .about-me .profile {
   position: absolute;
-  bottom: 100%;
+  bottom: 120px;
   left: 20px;
   z-index: 1;
   background-color: var(--light-color);
@@ -281,9 +290,9 @@ a {
 }
 
 .about-info figcaption {
-  width: 100%;
   padding: 10px;
   position: relative;
+  
 }
 
 .about-description {
@@ -324,7 +333,6 @@ a {
 .skill {
   position: relative;
   flex: 1;
-  width: 50%;
 }
 
 .skill h1 {
@@ -336,6 +344,8 @@ a {
 .skill .skill-box {
   position: relative;
   flex: 1;
+  flex-basis: 300px;
+  height: 250px;
   background-color: var(--primary-color);
   padding: 20px;
   border: 1px solid var(--light-color);
@@ -344,7 +354,6 @@ a {
 }
 
 .skill-info {
-  width: 100%;
   margin: 18px 0;
 }
 
@@ -420,27 +429,30 @@ a {
 
 /* Projects section */
 .projects-section {
+    position: relative;
   height: 80vh;
+  min-height: 700px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: start;
   flex-direction: column;
   padding: 0 200px;
- 
 }
 
-.projects-section h1{
-    font-size: 20px;
-    font-weight: 800;
-    padding-bottom: 30px; 
+.projects-section h1 {
+  font-size: 20px;
+  font-weight: 800;
+  padding-bottom: 30px;
 }
 
 .projects-section .project-container {
-    width: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-flow: wrap;
   gap: 50px;
 }
 
@@ -452,21 +464,153 @@ a {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  width: 30%;
+  flex-basis: 200px;
   height: 200px;
   box-shadow: 1px 2px 4px 1px var(--shadow-color);
   border-radius: 20px;
 }
 
-.project-box .project-icon-box{
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    border-radius: 50%;
+.project-box .project-icon-box {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 50%;
 }
 
 /* Projects section ends */
+
+/* Contact section starts */
+.contact-section {
+  height: 80vh;
+  min-height: 700px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 200px;
+}
+
+.contact-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  flex-flow: wrap;
+  gap: 40px;
+}
+.contact-details {
+  flex: 1;
+  flex-basis: 300px;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+  height: 300px;
+  box-shadow: 1px 2px 4px 1px var(--shadow-color);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.contact-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-me img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-row .contact-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.contact-form {
+  flex: 1;
+  flex-basis: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form{
+    width: 100%;
+    text-align: center;
+}
+
+form .input-field{
+    outline: none !important;
+    width: 100%;
+    padding: 15px 10px;
+    background-color: var(--gray-color);
+    margin-bottom: 12px;
+    border: 1px solid var(--gray-color);
+    border-radius: 6px;
+}
+
+
+
+form textarea{
+    outline: none !important;
+    width: 100%;
+    padding: 15px 10px;
+    background-color: var(--gray-color);
+    margin-bottom: 12px;
+    border: 1px solid var(--gray-color);
+    border-radius: 6px;
+}
+
+.form-btn{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .form-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+  }
+/* Contact section ends */
+
+/* Footer starts */
+.footer{
+    width: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    text-align: center;
+
+}
+/* Footer ends */
