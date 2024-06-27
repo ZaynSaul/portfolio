@@ -6,8 +6,9 @@
   --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
-@media only screen and (min-width: 300px) and (max-width: 968px) {
+@media only screen and (min-width: 300px) and (max-width: 868px) {
   .header {
+    position: static !important;
     width         : 100%;
     justify-content: space-around;
     padding: 1rem 0;
@@ -17,8 +18,10 @@
   }
 
   .navbar-toggle {
-    display: block;
+    display: none;
   }
+
+  
 
   .header-title{
     text-align: center;
@@ -37,6 +40,7 @@
 
   .right {
     align-items: center;
+    width: 100%;
   }
 
   .right h4 {
@@ -50,14 +54,18 @@
 
   .about-section {
     height: 100vh;
+    flex-direction: column;
     padding: 30px 20px;
     margin: 130px 0;
   }
 
   .about-info {
     width: 100%;
-    padding-block: 0;
-    padding: 0;
+    align-items: center;
+  }
+
+  .about-description{
+    text-align: center;
   }
 
   .about-info figcaption {
@@ -67,12 +75,10 @@
 
   .about-me .profile {
     left: 45%;
-    bottom: 100px;
+    bottom: 120px;
   }
 
-  .skill .skill-box {
-    width: 25rem;
-  }
+  
 
   .projects-section {
     height: 100vh;
@@ -91,13 +97,70 @@
     margin: 120px 0;
   }
 
+  .contact-section p {
+    text-align: center;
+  }
+
   .contact-details {
     height: 200px;
+    align-items: center;
+  }
+  .contact-form {
+    align-items: center;
+  }
+
+  form .input-box-row{
+    flex-direction: column;
+    gap: 0;
+    margin-botom: 0;
   }
 
   .footer{
     width: 100%;
     margin-top: 100px;
    
+  }
+
+  .mobile-nav-section{
+    position: fixed;
+    top: 20%;
+    right: 10px;
+    display: block;
+    padding: 30px 0px;
+  }
+  
+  .mobile-navbar{
+    width: 100%;
+  }
+  
+  .mobile-nav-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .mobile-nav-link.active-btn{
+    background-color: var(--secondary-color);
+  }
+  
+  .mobile-nav-link{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-color);
+    border-radius: 50%;
+    opacity: 0.6;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .mobile-nav-link .icon {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
   }
 }

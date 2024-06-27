@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
+
   <body>
     <div class="container">
       <header class="header">
         <div class="navbar-brand">
-          <a href="#" class="navbar-logo">LOGO</a>
+          <a href="#" class="navbar-logo">
+            <img src="./assets/images/logo.png" alt="LOGO" class="logo" />
+          </a>
         </div>
         <nav class="navbar" id="navbar">
           <ul class="navbar-menu">
@@ -43,7 +46,7 @@
 
       <main class="main-wrapper">
         <!-- Hero section starts -->
-        <section class="hero-section" id="home">
+        <section class="hero-section section" id="home">
           <div class="hero-box">
             <div class="left">
               <img src="./assets/images/hero-image.webp" alt="" />
@@ -62,7 +65,7 @@
               <div class="social-media-links">
                 <img src="./assets/icons/fb.png" alt="facebook" />
                 <img src="./assets/icons/linkedin.png" alt="linked-in" />
-                <img src="./assets/icons/ig.png" alt="instagram" />
+                <img src="./assets/icons/whatsapp.png" alt="whatsapp" />
                 <img src="./assets/icons/github.png" alt="github" />
               </div>
             </div>
@@ -71,7 +74,7 @@
         <!-- Hero section ends -->
 
         <!-- About section -->
-        <section class="about-section" id="about">
+        <section class="about-section section" id="about">
           <div class="about">
             <h1 class="header-title">About Me</h1>
             <div class="row">
@@ -97,7 +100,7 @@
             </div>
           </div>
           <div class="skill">
-            <h1 class="header-title">Skill</h1>
+            <h1 class="header-title">Skills</h1>
             <div class="skill-box">
               <div class="skill-info">
                 <span class="title">HTML</span>
@@ -136,7 +139,7 @@
         </section>
         <!-- About section ends -->
         <!-- Projects Sections -->
-        <section class="projects-section" id="projects">
+        <section class="projects-section section" id="projects">
           <h1 class="header-title">Projects</h1>
           <div class="project-container">
             <div class="project-box">
@@ -176,7 +179,7 @@
         </section>
         <!-- Projects Section ends -->
         <!-- Contact Section -->
-        <section class="contact-section" id="contact">
+        <section class="contact-section section" id="contact">
           <h4>Let's work together</h4>
           <p>Do you have a project in your mind, contact here me below</p>
           <div class="contact-container">
@@ -207,37 +210,37 @@
               </div>
             </div>
             <div class="contact-form">
+              <h1>Contact Me</h1>
               <form action="">
                 <div class="input-box">
                   <input
                     type="text"
                     class="input-field"
                     title="Name"
-                    placeholder="Enter your name"
+                    placeholder="Enter your full name"
                   />
                 </div>
-                <div class="input-box">
+                <div class="input-box-row">
+                  <input
+                    type="email"
+                    class="input-field"
+                    title="Email"
+                    placeholder="someone@example.com"
+                  />
+
                   <input
                     type="text"
                     class="input-field"
-                    title="Name"
-                    placeholder="Enter your name"
-                  />
-                </div>
-                <div class="input-box">
-                  <input
-                    type="text"
-                    class="input-field"
-                    title="Name"
-                    placeholder="Enter your name"
+                    title="Subject"
+                    placeholder="Enter subject"
                   />
                 </div>
                 <div class="input-box">
                   <textarea
                     name=""
                     id=""
-                    title="Name"
-                    placeholder="Enter your name"
+                    title="Message"
+                    placeholder="Message area"
                   ></textarea>
                 </div>
                 <button type="button" class="form-btn">Submit</button>
@@ -246,6 +249,7 @@
           </div>
         </section>
         <!-- Contact section ends -->
+
         <!-- Footer section -->
         <footer class="footer">
           <p>&copy; Copyright Dev Saul Boot camp 2024. All rights reserved</p>
@@ -253,5 +257,40 @@
         <!-- Footer ends -->
       </main>
     </div>
+    <!-- Mobile navigation -->
+    <div class="mobile-nav-section">
+      <nav class="mobile-navbar">
+        <ul class="mobile-nav-list">
+          <li class="mobile-nav-list-item">
+            <a href="#home" class="mobile-nav-link link-1 active-btn">
+              <img src="./assets/icons/home.png" alt="home" class="icon" />
+            </a>
+          </li>
+          <li class="mobile-nav-list-item">
+            <a href="#about" class="mobile-nav-link link-2">
+              <img src="./assets/icons/about.png" alt="About" class="icon" />
+            </a>
+          </li>
+          <li class="mobile-nav-list-item">
+            <a href="#projects" class="mobile-nav-link link-3">
+              <img
+                src="./assets/icons/project.png"
+                alt="Project"
+                class="icon"
+              />
+            </a>
+          </li>
+          <li class="mobile-nav-list-item">
+            <a href="#contact" class="mobile-nav-link link-4">
+              <img src="./assets/icons/contact.png" alt="Phone" class="icon" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Mobile navigation ends -->
+
+    <!-- Scripts -->
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
